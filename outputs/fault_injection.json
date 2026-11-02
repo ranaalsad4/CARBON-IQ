@@ -1,0 +1,231 @@
+{
+ "baseline_passes": true,
+ "faults": 28,
+ "detected": 28,
+ "results": [
+  {
+   "fault": "double counting",
+   "description": "B-C overlap not removed from portfolio totals",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_engine.py::test_ledger_equals_portfolio_for_all_64_no_double_counting",
+   "detected": true,
+   "pytest": "1 failed in 0.59s"
+  },
+  {
+   "fault": "uncertainty rule",
+   "description": "uncertainties of a product added linearly instead of in quadrature",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_engine.py::test_ghg_protocol_worked_example",
+   "detected": true,
+   "pytest": "1 failed in 0.71s"
+  },
+  {
+   "fault": "chance constraint",
+   "description": "target-probability requirement ignored",
+   "file": "carbon_iq/uncertainty.py",
+   "test": "tests/test_decisions.py::test_chance_constraint_respected",
+   "detected": true,
+   "pytest": "1 failed in 0.72s"
+  },
+  {
+   "fault": "VOI baseline",
+   "description": "EVPI not measured against the prior decision",
+   "file": "carbon_iq/voi.py",
+   "test": "tests/test_decisions.py::test_no_uncertainty_no_information_value",
+   "detected": true,
+   "pytest": "1 failed in 0.60s"
+  },
+  {
+   "fault": "log-OU drift",
+   "description": "mean-reversion level not corrected for volatility",
+   "file": "carbon_iq/timing.py",
+   "test": "tests/test_timing.py::test_logou_long_run_mean",
+   "detected": true,
+   "pytest": "1 failed in 0.51s"
+  },
+  {
+   "fault": "reporting basis (v1.1)",
+   "description": "reporting basis silently ignored",
+   "file": "carbon_iq/uncertainty.py",
+   "test": "tests/test_v11.py::test_reporting_basis_uses_fixed_factors",
+   "detected": true,
+   "pytest": "1 failed in 0.71s"
+  },
+  {
+   "fault": "capital-cost risk (v1.1)",
+   "description": "actual capex replaced by the quote",
+   "file": "carbon_iq/uncertainty.py",
+   "test": "tests/test_v11.py::test_capex_risk_separates_quote_and_actual",
+   "detected": true,
+   "pytest": "1 failed in 0.80s"
+  },
+  {
+   "fault": "budget chance constraint (v1.2)",
+   "description": "budget-compliance requirement ignored",
+   "file": "carbon_iq/decisions.py",
+   "test": "tests/test_v11.py::test_joint_budget_constraint_infeasible_and_not_forced",
+   "detected": true,
+   "pytest": "1 failed in 1.06s"
+  },
+  {
+   "fault": "sampling margin (v1.2)",
+   "description": "chance constraint not tightened for sampling error",
+   "file": "carbon_iq/uncertainty.py",
+   "test": "tests/test_v11.py::test_tightened_chance_constraint_and_validation",
+   "detected": true,
+   "pytest": "1 failed in 0.95s"
+  },
+  {
+   "fault": "activity uncertainty (v1.1)",
+   "description": "activity-data uncertainty dropped from the Monte Carlo",
+   "file": "carbon_iq/uncertainty.py",
+   "test": "tests/test_v11.py::test_activity_uncertainty_in_register_and_used_by_both_methods",
+   "detected": true,
+   "pytest": "1 failed in 0.75s"
+  },
+  {
+   "fault": "missing as zero (A4)",
+   "description": "unresolved data gaps counted as zero",
+   "file": "carbon_iq/dataquality/estimate.py",
+   "test": "tests/test_a4.py::test_missing_never_becomes_zero",
+   "detected": true,
+   "pytest": "1 failed in 2.57s"
+  },
+  {
+   "fault": "original overwritten (A4)",
+   "description": "approved estimate written over the observed-value column",
+   "file": "carbon_iq/dataquality/estimate.py",
+   "test": "tests/test_a4.py::test_lineage_preserves_original_and_records_decisions",
+   "detected": true,
+   "pytest": "1 failed in 2.57s"
+  },
+  {
+   "fault": "estimation uncertainty (A4)",
+   "description": "uncertainty of estimated values dropped from the Monte Carlo",
+   "file": "carbon_iq/dataquality/integrate.py",
+   "test": "tests/test_a4.py::test_estimation_uncertainty_widens_simulation",
+   "detected": true,
+   "pytest": "1 failed in 1.74s"
+  },
+  {
+   "fault": "gap-length refusal (A4)",
+   "description": "long gaps estimated instead of refused",
+   "file": "carbon_iq/dataquality/estimate.py",
+   "test": "tests/test_a4.py::test_refusal_rules",
+   "detected": true,
+   "pytest": "1 failed in 2.07s"
+  },
+  {
+   "fault": "unit conversion (A4)",
+   "description": "kWh treated as MWh",
+   "file": "carbon_iq/dataquality/quality.py",
+   "test": "tests/test_a4.py::test_kwh_conversion_exact",
+   "detected": true,
+   "pytest": "1 failed in 2.09s"
+  },
+  {
+   "fault": "change detection (A4.1)",
+   "description": "operational-change test silently skipped",
+   "file": "carbon_iq/dataquality/estimate.py",
+   "test": "tests/test_a4.py::test_operational_change_detected_and_estimation_restricted",
+   "detected": true,
+   "pytest": "1 failed in 2.38s"
+  },
+  {
+   "fault": "calibration factor (A4.1)",
+   "description": "calibrated interval factor not applied",
+   "file": "carbon_iq/dataquality/estimate.py",
+   "test": "tests/test_a4.py::test_calibration_switch_reproduces_first_release",
+   "detected": true,
+   "pytest": "1 failed in 2.54s"
+  },
+  {
+   "fault": "uncertain target (A4.1)",
+   "description": "baseline estimation error ignored in the carbon target",
+   "file": "carbon_iq/dataquality/integrate.py",
+   "test": "tests/test_a4.py::test_uncertain_target_offset_is_exact",
+   "detected": true,
+   "pytest": "1 failed in 2.02s"
+  },
+  {
+   "fault": "pre-posterior conditioning (A4.1)",
+   "description": "information value computed without conditioning on the measurement",
+   "file": "carbon_iq/dataquality/integrate.py",
+   "test": "tests/test_a4.py::test_preposterior_value_of_information",
+   "detected": true,
+   "pytest": "1 failed in 2.79s"
+  },
+  {
+   "fault": "stability flag (A4.1)",
+   "description": "knife-edge margin never flagged",
+   "file": "carbon_iq/dataquality/stability.py",
+   "test": "tests/test_a4.py::test_stability_flags_knife_edge_but_not_robust_rules",
+   "detected": true,
+   "pytest": "1 failed in 2.00s"
+  },
+  {
+   "fault": "PV degradation (A5)",
+   "description": "PV energy discounted without degradation",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_engine.py::test_project_a_by_hand",
+   "detected": true,
+   "pytest": "1 failed in 0.56s"
+  },
+  {
+   "fault": "leak-management cost (A5)",
+   "description": "compressed-air leak-management cost dropped",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_engine.py::test_project_d_and_e_by_hand",
+   "detected": true,
+   "pytest": "1 failed in 0.55s"
+  },
+  {
+   "fault": "profile restore (A5)",
+   "description": "comparison profile leaks into the register after an exception",
+   "file": "carbon_iq/assumptions.py",
+   "test": "tests/test_a5.py::test_v12_profile_reproduces_v12_and_restores",
+   "detected": true,
+   "pytest": "1 failed in 0.79s"
+  },
+  {
+   "fault": "MAC discounting (A5)",
+   "description": "MAC ignores the degraded output of PV",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_a5.py::test_degraded_annuity_and_mac",
+   "detected": true,
+   "pytest": "1 failed in 0.62s"
+  },
+  {
+   "fault": "finite-input guard (A6)",
+   "description": "NaN inputs reach the optimiser unchecked",
+   "file": "carbon_iq/optimize.py",
+   "test": "tests/test_a6.py::test_non_finite_inputs_are_refused_not_silently_optimised",
+   "detected": true,
+   "pytest": "1 failed in 1.19s"
+  },
+  {
+   "fault": "IRR with degradation (A6)",
+   "description": "PV IRR computed with constant cash flows",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_a6.py::test_project_irr_accounts_for_pv_degradation",
+   "detected": true,
+   "pytest": "1 failed in 1.56s"
+  },
+  {
+   "fault": "annuity edge (A6)",
+   "description": "degraded annuity returns n when r = -d",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_a6.py::test_annuity_factors_stable_at_edges",
+   "detected": true,
+   "pytest": "1 failed, 4 passed in 1.14s"
+  },
+  {
+   "fault": "ledger overlap (A6)",
+   "description": "B-C overlap NPV ignores that C ends before B",
+   "file": "carbon_iq/engine.py",
+   "test": "tests/test_a6.py::test_all_64_portfolios_ledger_npv_and_reduction",
+   "detected": true,
+   "pytest": "1 failed in 1.58s"
+  }
+ ]
+}

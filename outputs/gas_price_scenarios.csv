@@ -1,0 +1,4 @@
+id,gas_price_usd,label,status,target_t,deterministic,det_npv,best_expected,best_expected_e_npv,best_expected_p_target,chance_constrained,cc_e_npv,cc_p_target,cc_p_budget,joint,joint_e_npv,joint_min_budget
+G0,2.15,2025 regulated methane price (reference),secondary (Al Jazira Capital summary of Aramco notices),1358.149725,A+B+C,1563086.5522340164,A+B+C,2557032.5241093887,0.9999,A+B+C,2557032.5241093887,0.9999,0.98875,A+B+C,2557032.5241093887,3952422.8085600645
+G1,2.47,2026 reported +10-20% (midpoint +15%),reported by a secondary source; no official figure,1358.149725,A+B+C,1563086.5522340164,A+B+C,2557032.5241093887,0.9999,A+B+C,2557032.5241093887,0.9999,0.98875,A+B+C,2557032.5241093887,3952422.8085600645
+G2,3.0,v1.2 anchor (KAPSARC DP49 modelling value),"study anchor, not a price",1358.149725,A+B+C,1563086.5522340164,A+B+C,2557032.5241093887,0.9999,A+B+C,2557032.5241093887,0.9999,0.98875,A+B+C,2557032.5241093887,3952422.8085600645

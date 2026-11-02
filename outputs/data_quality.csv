@@ -1,0 +1,7 @@
+source_id,scope,source,activity,unit,ef_t_per_unit,emissions_t,u_activity_pct,u_ef_pct,u_combined_pct,quality,first_order_valid
+S1-GAS,Scope 1,"Natural gas, process heat",35000.0,GJ,0.0561545,1965.4075,2.939946,3.5279351999999995,4.592342458736613,High,True
+S1-DSL-FL,Scope 1,"Diesel, forklifts",60000.0,L,0.00266155,159.69299999999998,5.0,3.919928,6.353411329764821,Good,True
+S1-DSL-GEN,Scope 1,"Diesel, backup generators",20000.0,L,0.00266155,53.231,10.0,3.919928,10.740848920135875,Good,True
+S2-ELEC,Scope 2,Grid electricity (location-based),12000.0,MWh,0.573,6875.999999999999,1.959964,9.79982,9.99389468193937,Good,True
+S3-C1-STEEL,Scope 3 Cat 1,Purchased steel,6000.0,t,1.92,11520.0,2.0,21.5234375,21.616159737946198,Fair,True
+S3-C4-FRT,Scope 3 Cat 4,Inbound road freight,2000000.0,t-km,0.00010163,203.26,20.0,29.399459999999998,35.55739372186324,Poor,True

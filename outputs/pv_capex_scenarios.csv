@@ -1,0 +1,3 @@
+id,pv_capex_kw,label,target_t,deterministic,det_npv,best_expected,best_expected_e_npv,best_expected_p_target,chance_constrained,cc_e_npv,cc_p_target,cc_p_budget,joint,joint_e_npv,joint_min_budget
+P0,2500,Riyadh rooftop benchmark SAR 2.5/W (reference),1358.149725,A+B+C,1563086.5522340164,A+B+C,2557032.5241093887,0.9999,A+B+C,2557032.5241093887,0.9999,0.98875,A+B+C,2557032.5241093887,3952422.8085600645
+P1,3750,v1.2 assumption SAR 3.75/W (no direct source),1358.149725,A+B,151070.2743231592,A+B+C,1147458.8192206433,0.9999,A+B+C,1147458.8192206433,0.9999,0.307,none feasible,,5436294.911763776

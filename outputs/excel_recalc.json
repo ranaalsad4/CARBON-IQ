@@ -1,0 +1,8 @@
+{
+ "status": "success",
+ "engine": "LibreOffice",
+ "total_formulas": 920,
+ "total_errors": 0,
+ "errors": [],
+ "formulas_without_value": 0
+}

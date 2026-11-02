@@ -1,0 +1,42 @@
+kind,item,old,new,difference,relative,changed,detail
+result,Scope 1+2 baseline (t),8778.3315,8778.3315,0.0,0.0,False,
+result,Total baseline (t),20501.591500000002,20501.591500000002,0.0,0.0,False,
+result,Target (t/yr),1316.749725,1316.749725,0.0,0.0,False,
+result,"Scope 1+2 uncertainty, analytic (±%)",7.585105019411546,7.585105019411546,0.0,0.0,False,
+result,"Total uncertainty, analytic (±%)",12.577938850193675,12.577938850193675,0.0,0.0,False,
+result,"Scope 1+2 uncertainty, Monte Carlo (±%)",7.501970218495958,7.501023491206691,-0.0009467272892669243,-0.00012619715377338968,True,
+result,Deterministic optimum,A+B,A+B,,,False,
+result,Deterministic optimum NPV (SAR),337930.7073417951,337930.7073417951,0.0,0.0,False,
+result,Highest expected NPV portfolio,A+B,A+B,,,False,
+result,Highest E[NPV] (SAR),1278455.6590973139,1278455.6590973139,0.0,0.0,False,
+result,Highest E[NPV]: P(target),0.87355,0.90275,0.029200000000000004,0.033426821590063535,True,
+result,Chance-constrained portfolio,A+C+D,A+C+D,,,False,
+result,Chance-constrained E[NPV] (SAR),687126.3559857268,687126.3559857268,0.0,0.0,False,
+result,Chance-constrained P(target),0.97985,0.99765,0.017800000000000038,0.018166045823340346,True,
+result,Chance-constrained P(actual capex > budget),,0.2222,,,True,
+result,Primary rule: carbon 90% + budget 90%,,none feasible,,,True,
+result,"Carbon rule, P(target) on validation",,0.997425,,,True,
+result,EVPI (SAR),651351.0648518788,654323.4788231814,2972.413971302565,0.004563459141620518,True,
+result,EVSI motor audit (SAR),551262.472850555,584080.7400270301,32818.26717647514,0.05953292450105169,True,
+result,VOI noise floor (SAR),0.0,269985.35419054166,269985.35419054166,,True,
+result,Decision tree option premium (SAR),86564.6377956249,86564.6377956249,0.0,0.0,False,
+result,Static break-even gas (USD/MMBtu),3.8465751940359008,3.8465751940359008,0.0,0.0,False,
+result,GBM trigger (USD/MMBtu),17.266829530417517,17.266829530417517,0.0,0.0,False,
+result,LSMC trigger (USD/MMBtu),6.25,6.25,0.0,0.0,False,
+assumption,tariff,0.18,0.18,,,True,status: 'verified' -> 'provisional'
+assumption,gas_price_usd,3.0,3.0,,,True,status: 'verified' -> 'transferred'
+assumption,discount_rate,0.06,0.06,,,True,status: 'verified' -> 'transferred'
+assumption,budget_chance_level,,0.9,,,True,new parameter
+assumption,diesel_forklift_l,60000.0,60000.0,,,True,"dist: '' -> ""('normal_rel', 0.025510672645007768)"""
+assumption,diesel_genset_l,20000.0,20000.0,,,True,"dist: '' -> ""('normal_rel', 0.051021345290015535)"""
+assumption,steel_t,6000.0,6000.0,,,True,"dist: '' -> ""('normal_rel', 0.010204269058003106)"""
+assumption,freight_tkm,2000000.0,2000000.0,,,True,"dist: '' -> ""('normal_rel', 0.10204269058003107)"""
+assumption,ef_grid,0.55,0.55,,,True,status: 'verified' -> 'provisional'
+assumption,ef_diesel,0.00266155,0.00266155,,,True,status: 'verified' -> 'transferred'
+assumption,ef_freight,0.00010163,0.00010163,,,True,status: 'verified' -> 'transferred'
+assumption,ef_steel_incumbent,1.92,1.92,,,True,status: 'verified' -> 'transferred'
+assumption,ef_steel_alt,1.47,1.47,,,True,status: 'verified' -> 'transferred'
+assumption,pv_life,25.0,25.0,,,True,status: 'verified' -> 'transferred'
+assumption,ro_kappa,0.5,0.5,,,True,status: 'verified' -> 'transferred'
+assumption,ro_sigma,0.522,0.522,,,True,status: 'verified' -> 'transferred'
+assumption,ro_mu_gbm,0.0125,0.0125,,,True,status: 'verified' -> 'transferred'

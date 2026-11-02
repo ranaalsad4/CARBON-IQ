@@ -1,0 +1,9 @@
+information,parameter,evppi_sar,collection_cost_sar,net_value_sar,decision_changes,choices,net_of_noise_floor
+Compressed-air savings (C sub-metering),c_saving_frac,35953.99621734116,40000.0,-4046.0037826588377,True,"[""A+B"", ""A+B+C""]",35953.99621734023
+Solar capex (firm quotation; cost not estimated),pv_capex_kw,9.313225746154785e-10,,,False,"[""A+B+C""]",0.0
+Steel supplier factors (F supplier data),ef_steel_alt,4.656612873077393e-10,20000.0,-19999.999999999534,False,"[""A+B+C""]",-4.656612873077393e-10
+Electricity tariff (policy; not collectable),tariff,4.656612873077393e-10,,,False,"[""A+B+C""]",-4.656612873077393e-10
+Grid emission factor (external; not collectable),ef_grid,4.656612873077393e-10,,,False,"[""A+B+C""]",-4.656612873077393e-10
+Motor-system savings (B audit),b_saving_frac,0.0,80000.0,-80000.0,False,"[""A+B+C""]",-9.313225746154785e-10
+Gas price (policy; not collectable),gas_price_usd,0.0,,,False,"[""A+B+C""]",-9.313225746154785e-10
+Solar yield (A site study),pv_yield,-4.656612873077393e-10,30000.0,-30000.000000000466,False,"[""A+B+C""]",-1.3969838619232178e-09

@@ -1,0 +1,4 @@
+method,ids,portfolio,capex,npv,scope12_t,scope3_t,order,meets_target
+Rank by NPV per riyal (profitability index),"[""A"", ""B"", ""C""]",A+B+C,4050000.0,1563086.5522340164,1755.2135999999998,0.0,ABCEDF,True
+Rank by NPV,"[""A"", ""B"", ""C""]",A+B+C,4050000.0,1563086.5522340164,1755.2135999999998,0.0,ABCEDF,True
+"Rank by abatement cost (MAC), cheapest first","[""A"", ""B"", ""C"", ""D"", ""F""]",A+B+C+D+F,4700000.0,-560808.0443409998,2050.0247249999998,1349.9999999999998,ABCDEF,True
