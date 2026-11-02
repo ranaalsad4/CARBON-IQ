@@ -1,0 +1,19 @@
+{
+ "cal_monthly": 1.089840043026242,
+ "conformal_q": 1.089840043026242,
+ "n_cells": 5658,
+ "rho_annual": 0.12,
+ "n_stream_years": 1465,
+ "empirical_rho": 0.12913158053533913,
+ "seed": 5501,
+ "facilities": 100,
+ "variant": "base",
+ "scenarios": [
+  "random_1",
+  "random_3",
+  "block_3",
+  "rate_25",
+  "rate_40"
+ ],
+ "note": "SYNTHETIC calibration set; factors are generator-specific and must be re-fitted on real data"
+}

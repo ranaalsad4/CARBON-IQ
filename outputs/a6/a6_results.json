@@ -1,0 +1,483 @@
+{
+ "emissions": {
+  "n": 9,
+  "passed": 9,
+  "grid_consumption_factor": 0.6816279840848807,
+  "note": "Diesel: register uses DESNZ 2.66155 kg/L; IPCC default with CH4/N2O gives 2.6853 kg/L (+0.9%), inside the 2% tolerance"
+ },
+ "finance": {
+  "n": 170,
+  "passed": 170,
+  "failures": []
+ },
+ "optimization": {
+  "cases": 3267,
+  "identical_choice": 3267,
+  "identical_value": 3267,
+  "infeasible_cases": 1863,
+  "distinct_optima": 16
+ },
+ "mc_independent": {
+  "rows": 360,
+  "max_abs_z": 3.1702061705820084,
+  "share_abs_z_gt_3": 0.005555555555555556,
+  "share_abs_z_gt_2": 0.011111111111111112,
+  "decisions": {
+   "mt": {
+    "D2": "A+B+C",
+    "D3": "A+B+C",
+    "D4": "A+B+C"
+   },
+   "sobol": {
+    "D2": "A+B+C",
+    "D3": "A+B+C",
+    "D4": "A+B+C"
+   }
+  },
+  "model_decisions": {
+   "D2": "A+B+C",
+   "D3": "A+B+C",
+   "D4": "A+B+C"
+  }
+ },
+ "chance_budget": {
+  "max_abs_diff_model_vs_analytic": 0.0012067003129948572,
+  "max_abs_diff_validation_vs_analytic": 0.0016100000000000003,
+  "alpha_saa_20000": 0.9034892614038573
+ },
+ "mc_convergence": [
+  {
+   "n": 1000,
+   "e_npv_mean": 2540545.679328055,
+   "e_npv_sd": 35209.74110272536,
+   "p_ab_mean": 0.9332,
+   "p_ab_sd": 0.007524773898411948,
+   "p_bud_mean": 0.9897,
+   "p_bud_sd": 0.0027100635498904066,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 31308.57271530934,
+   "p_bud_sd_theory": 0.003335181779153871
+  },
+  {
+   "n": 2000,
+   "e_npv_mean": 2546839.3207533937,
+   "e_npv_sd": 17414.709043004408,
+   "p_ab_mean": 0.93675,
+   "p_ab_sd": 0.005181430518903265,
+   "p_bud_mean": 0.9884000000000001,
+   "p_bud_sd": 0.00228278582243519,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 22138.504076267353,
+   "p_bud_sd_theory": 0.0023583296525295167
+  },
+  {
+   "n": 5000,
+   "e_npv_mean": 2546289.5468294946,
+   "e_npv_sd": 6723.049600767907,
+   "p_ab_mean": 0.9351600000000001,
+   "p_ab_sd": 0.0029915436372103077,
+   "p_bud_mean": 0.9883200000000001,
+   "p_bud_sd": 0.0013862819979274866,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 14001.61937398537,
+   "p_bud_sd_theory": 0.0014915386351013495
+  },
+  {
+   "n": 10000,
+   "e_npv_mean": 2551765.8569263527,
+   "e_npv_sd": 10087.125948329376,
+   "p_ab_mean": 0.9346200000000001,
+   "p_ab_sd": 0.001468786347067987,
+   "p_bud_mean": 0.98813,
+   "p_bud_sd": 0.0005396500923952533,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 9900.640006937998,
+   "p_bud_sd_theory": 0.0010546770832818918
+  },
+  {
+   "n": 20000,
+   "e_npv_mean": 2548570.3938529408,
+   "e_npv_sd": 4782.46690525006,
+   "p_ab_mean": 0.9356349999999999,
+   "p_ab_sd": 0.0016038235563801883,
+   "p_bud_mean": 0.9881900000000001,
+   "p_bud_sd": 0.0009103723292026318,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 7000.809686992685,
+   "p_bud_sd_theory": 0.0007457693175506747
+  },
+  {
+   "n": 50000,
+   "e_npv_mean": 2547072.4425354553,
+   "e_npv_sd": 2842.7326750083757,
+   "p_ab_mean": 0.93564,
+   "p_ab_sd": 0.0011422784249034885,
+   "p_bud_mean": 0.988046,
+   "p_bud_sd": 0.000489448669423064,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 4427.700815253471,
+   "p_bud_sd_theory": 0.00047166593050590336
+  },
+  {
+   "n": 100000,
+   "e_npv_mean": 2547824.235313224,
+   "e_npv_sd": 2471.1541139756832,
+   "p_ab_mean": 0.9357050000000001,
+   "p_ab_sd": 0.000694202179963943,
+   "p_bud_mean": 0.9881779999999999,
+   "p_bud_sd": 0.0003786760562215973,
+   "D2_ABC": 1.0,
+   "D3_ABC": 1.0,
+   "D4_ABC": 1.0,
+   "e_npv_sd_theory": 3130.8572715309338,
+   "p_bud_sd_theory": 0.0003335181779153871
+  }
+ ],
+ "mc_time_s": 19.675548315048218,
+ "voi": {
+  "prior_choice": "A+B+C",
+  "evpi_model": 55670.47580093518,
+  "evpi_recomputed_same_definition": 55670.47580093518,
+  "evpi_chance_constraint_kept": 74267.26788730454,
+  "evsi_model": 0.0,
+  "evsi_likelihood_weighting": 0.0,
+  "evsi_posterior_choices": [
+   "A+B+C"
+  ],
+  "evppi": [
+   {
+    "parameter": "c_saving_frac",
+    "evppi_nested": 36058.213802113,
+    "evppi_binned_model": 35953.99621734116,
+    "posterior_choices_nested": "A+B;A+B+C",
+    "share_grid_changing_choice": 0.375,
+    "model_reported": 35953.99621734116
+   },
+   {
+    "parameter": "b_saving_frac",
+    "evppi_nested": 0.0,
+    "evppi_binned_model": 0.0,
+    "posterior_choices_nested": "A+B+C",
+    "share_grid_changing_choice": 0.0,
+    "model_reported": 0.0
+   },
+   {
+    "parameter": "tariff",
+    "evppi_nested": 0.0,
+    "evppi_binned_model": 4.656612873077393e-10,
+    "posterior_choices_nested": "A+B+C",
+    "share_grid_changing_choice": 0.0,
+    "model_reported": 4.656612873077393e-10
+   },
+   {
+    "parameter": "pv_yield",
+    "evppi_nested": 0.0,
+    "evppi_binned_model": -4.656612873077393e-10,
+    "posterior_choices_nested": "A+B+C",
+    "share_grid_changing_choice": 0.0,
+    "model_reported": -4.656612873077393e-10
+   },
+   {
+    "parameter": "ef_grid",
+    "evppi_nested": 0.0,
+    "evppi_binned_model": 4.656612873077393e-10,
+    "posterior_choices_nested": "A+B+C",
+    "share_grid_changing_choice": 0.0,
+    "model_reported": 4.656612873077393e-10
+   },
+   {
+    "parameter": "pv_capex_kw",
+    "evppi_nested": 0.0,
+    "evppi_binned_model": 9.313225746154785e-10,
+    "posterior_choices_nested": "A+B+C",
+    "share_grid_changing_choice": 0.0,
+    "model_reported": 9.313225746154785e-10
+   }
+  ]
+ },
+ "realoptions": {
+  "tree": {
+   "model_now": -219523.6106414041,
+   "hand_now": -219523.6106414041,
+   "model_wait": 0.0,
+   "hand_wait": 0.0,
+   "model_decision": "wait for the price decision",
+   "hand_decision": "wait for the price decision"
+  },
+  "logou_mean": [
+   {
+    "year": 1,
+    "closed_form": 2.2210546740166532,
+    "simulated": 2.217804027628621,
+    "se": 0.0021493150215546332
+   },
+   {
+    "year": 5,
+    "closed_form": 2.1721843521428164,
+    "simulated": 2.1707015437834385,
+    "se": 0.0027032405914902673
+   },
+   {
+    "year": 10,
+    "closed_form": 2.151961276911454,
+    "simulated": 2.1531206327910977,
+    "se": 0.0026954086850760014
+   }
+  ],
+  "logou_long_run_mean_equals_gbar": 2.15,
+  "lsmc_put_benchmark": {
+   "model_lsmc_mean": 4.468352588878527,
+   "sd_across_reps": 0.0025038849952935052,
+   "published_lsm": 4.472,
+   "published_fd": 4.478,
+   "european_bs": 3.84430779159684
+  },
+  "gbm": {
+   "lambda_": 1.250314805301364,
+   "quadratic_residual": 2.0816681711721685e-17,
+   "trigger_model": 17.266829530417517,
+   "trigger_numeric": 17.267428367709986,
+   "breakeven": 3.4568438714412686
+  },
+  "notes": "Decision tree = prototype for an administered price (one reform step), not a published method. LSMC = Longstaff-Schwartz (2001) on a log-OU process as in KAPSARC DP49; GBM trigger = Dixit-Pindyck closed form as in DP49 Eq. C.7/C.13. The DP49 calibration (kappa 0.5, sigma 0.522 from Henry Hub) is borrowed; Saudi administered prices do not follow it."
+ },
+ "missing": {
+  "coverage_flag_agreement": 1.0,
+  "by_dataset": [
+   {
+    "dataset": "base",
+    "gaps": 8346,
+    "coverage": 0.9491972202252577,
+    "ci_low": 0.9442759205305834,
+    "ci_high": 0.9537052012576351,
+    "mape": 0.06624556194782129,
+    "mape_mean_of_measured": 0.07075708988791585,
+    "bias": 0.007000770859863767
+   }
+  ],
+  "calibration_factor": 1.0898,
+  "coverage_reported_after": 0.9491972202252577,
+  "change_detection": [
+   {
+    "true_shift": 0.0,
+    "noise_sd": 0.03,
+    "detect_rate_model": 0.0,
+    "detect_rate_independent": 0.0,
+    "split_within_1_month": null
+   },
+   {
+    "true_shift": 0.0,
+    "noise_sd": 0.06,
+    "detect_rate_model": 0.005,
+    "detect_rate_independent": 0.0,
+    "split_within_1_month": null
+   },
+   {
+    "true_shift": 0.05,
+    "noise_sd": 0.03,
+    "detect_rate_model": 0.0,
+    "detect_rate_independent": 0.0,
+    "split_within_1_month": null
+   },
+   {
+    "true_shift": 0.05,
+    "noise_sd": 0.06,
+    "detect_rate_model": 0.01,
+    "detect_rate_independent": 0.01,
+    "split_within_1_month": 0.0
+   },
+   {
+    "true_shift": 0.1,
+    "noise_sd": 0.03,
+    "detect_rate_model": 0.425,
+    "detect_rate_independent": 0.425,
+    "split_within_1_month": 0.9529411764705882
+   },
+   {
+    "true_shift": 0.1,
+    "noise_sd": 0.06,
+    "detect_rate_model": 0.05,
+    "detect_rate_independent": 0.055,
+    "split_within_1_month": 0.5
+   },
+   {
+    "true_shift": 0.2,
+    "noise_sd": 0.03,
+    "detect_rate_model": 1.0,
+    "detect_rate_independent": 1.0,
+    "split_within_1_month": 1.0
+   },
+   {
+    "true_shift": 0.2,
+    "noise_sd": 0.06,
+    "detect_rate_model": 0.58,
+    "detect_rate_independent": 0.595,
+    "split_within_1_month": 0.9482758620689655
+   },
+   {
+    "true_shift": 0.3,
+    "noise_sd": 0.03,
+    "detect_rate_model": 1.0,
+    "detect_rate_independent": 1.0,
+    "split_within_1_month": 1.0
+   },
+   {
+    "true_shift": 0.3,
+    "noise_sd": 0.06,
+    "detect_rate_model": 0.975,
+    "detect_rate_independent": 0.975,
+    "split_within_1_month": 0.9897435897435898
+   }
+  ],
+  "target_sd_model": 8.79877,
+  "target_sd_independent": 8.794269218038393,
+  "note": "sds in the detail string are rounded to 0.1, so agreement is to about 0.1%"
+ },
+ "gsa": {
+  "N": 8192,
+  "evaluations": 237568,
+  "top": {
+   "1[scenario-best portfolio = A+B+C]": [
+    {
+     "parameter": "c_saving_frac",
+     "S1": 0.39086764362717974,
+     "ST": 0.7073427646293372
+    },
+    {
+     "parameter": "tariff",
+     "S1": 0.032408623717831486,
+     "ST": 0.22857900516137208
+    },
+    {
+     "parameter": "c_capex",
+     "S1": 0.030444464704629578,
+     "ST": 0.1853675068709301
+    },
+    {
+     "parameter": "e_capex",
+     "S1": 0.06039788965595868,
+     "ST": 0.16597143661556124
+    },
+    {
+     "parameter": "b_saving_frac",
+     "S1": -0.0024551987665023855,
+     "ST": 0.15148576389319718
+    },
+    {
+     "parameter": "gas_price_usd",
+     "S1": 0.014240152845713835,
+     "ST": 0.08298571830778062
+    }
+   ],
+   "NPV(A+B+C)": [
+    {
+     "parameter": "tariff",
+     "S1": 0.4226649922702131,
+     "ST": 0.4255982831032321
+    },
+    {
+     "parameter": "b_saving_frac",
+     "S1": 0.2913151396606046,
+     "ST": 0.2936438848966467
+    },
+    {
+     "parameter": "pv_capex_kw",
+     "S1": 0.18396157301636323,
+     "ST": 0.18391659001125696
+    },
+    {
+     "parameter": "pv_yield",
+     "S1": 0.035037616126004166,
+     "ST": 0.03525803399845574
+    },
+    {
+     "parameter": "b_capex",
+     "S1": 0.033342710706605536,
+     "ST": 0.03333450144771554
+    },
+    {
+     "parameter": "c_saving_frac",
+     "S1": 0.024204920659798495,
+     "ST": 0.024380931731694335
+    }
+   ],
+   "NPV(A+B+C) - NPV(A+B)": [
+    {
+     "parameter": "c_saving_frac",
+     "S1": 0.815205488330781,
+     "ST": 0.8218331911305371
+    },
+    {
+     "parameter": "c_capex",
+     "S1": 0.09546955074171182,
+     "ST": 0.0955546263019106
+    },
+    {
+     "parameter": "tariff",
+     "S1": 0.08139497477038835,
+     "ST": 0.08824129705662707
+    },
+    {
+     "parameter": "elec_mwh",
+     "S1": 0.0010193117263599613,
+     "ST": 0.0010660264196339234
+    },
+    {
+     "parameter": "b_saving_frac",
+     "S1": 2.459359875345265e-17,
+     "ST": 5.946042754754002e-31
+    },
+    {
+     "parameter": "pv_capex_kw",
+     "S1": 9.06565556054333e-18,
+     "ST": 4.893975654676702e-31
+    }
+   ],
+   "Reduction(A+B+C) - target": [
+    {
+     "parameter": "b_saving_frac",
+     "S1": 0.8173217432875906,
+     "ST": 0.8172428720225708
+    },
+    {
+     "parameter": "c_saving_frac",
+     "S1": 0.11821360957571947,
+     "ST": 0.1181681845167481
+    },
+    {
+     "parameter": "pv_yield",
+     "S1": 0.06322476151988309,
+     "ST": 0.0630463533257191
+    },
+    {
+     "parameter": "elec_mwh",
+     "S1": 0.0019503565081567412,
+     "ST": 0.00203984832774665
+    },
+    {
+     "parameter": "d_capex",
+     "S1": 0.0,
+     "ST": 0.0
+    },
+    {
+     "parameter": "c_capex",
+     "S1": 0.0,
+     "ST": 0.0
+    }
+   ]
+  }
+ },
+ "model_version": "1.3"
+}

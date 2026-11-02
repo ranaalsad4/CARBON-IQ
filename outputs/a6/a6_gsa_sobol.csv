@@ -1,0 +1,109 @@
+output,parameter,S1,ST
+NPV(A+B+C),b_capex,0.033342710706605536,0.03333450144771554
+NPV(A+B+C) - NPV(A+B),b_capex,1.2994287092152585e-17,3.3682590914075313e-31
+Reduction(A+B+C) - target,b_capex,0.0,0.0
+1[scenario-best portfolio = A+B+C],b_capex,0.003928318026403817,0.07341044311842132
+NPV(A+B+C),b_saving_frac,0.2913151396606046,0.2936438848966467
+NPV(A+B+C) - NPV(A+B),b_saving_frac,2.459359875345265e-17,5.946042754754002e-31
+Reduction(A+B+C) - target,b_saving_frac,0.8173217432875906,0.8172428720225708
+1[scenario-best portfolio = A+B+C],b_saving_frac,-0.0024551987665023855,0.15148576389319718
+NPV(A+B+C),c_capex,0.0027908578302844812,0.002834773340450791
+NPV(A+B+C) - NPV(A+B),c_capex,0.09546955074171182,0.0955546263019106
+Reduction(A+B+C) - target,c_capex,0.0,0.0
+1[scenario-best portfolio = A+B+C],c_capex,0.030444464704629578,0.1853675068709301
+NPV(A+B+C),c_saving_frac,0.024204920659798495,0.024380931731694335
+NPV(A+B+C) - NPV(A+B),c_saving_frac,0.815205488330781,0.8218331911305371
+Reduction(A+B+C) - target,c_saving_frac,0.11821360957571947,0.1181681845167481
+1[scenario-best portfolio = A+B+C],c_saving_frac,0.39086764362717974,0.7073427646293372
+NPV(A+B+C),d_capex,0.0,0.0
+NPV(A+B+C) - NPV(A+B),d_capex,0.0,0.0
+Reduction(A+B+C) - target,d_capex,0.0,0.0
+1[scenario-best portfolio = A+B+C],d_capex,0.0014731192599014313,0.05843373064275677
+NPV(A+B+C),d_saving_frac,0.0,0.0
+NPV(A+B+C) - NPV(A+B),d_saving_frac,0.0,0.0
+Reduction(A+B+C) - target,d_saving_frac,0.0,0.0
+1[scenario-best portfolio = A+B+C],d_saving_frac,-0.0034372782731033396,0.0630986082991113
+NPV(A+B+C),diesel_forklift_l,0.0,0.0
+NPV(A+B+C) - NPV(A+B),diesel_forklift_l,0.0,0.0
+Reduction(A+B+C) - target,diesel_forklift_l,0.0,0.0
+1[scenario-best portfolio = A+B+C],diesel_forklift_l,-0.0029462385198028625,0.019150550378718604
+NPV(A+B+C),diesel_genset_l,0.0,0.0
+NPV(A+B+C) - NPV(A+B),diesel_genset_l,0.0,0.0
+Reduction(A+B+C) - target,diesel_genset_l,0.0,0.0
+1[scenario-best portfolio = A+B+C],diesel_genset_l,0.0,0.0
+NPV(A+B+C),diesel_price,0.0,0.0
+NPV(A+B+C) - NPV(A+B),diesel_price,0.0,0.0
+Reduction(A+B+C) - target,diesel_price,0.0,0.0
+1[scenario-best portfolio = A+B+C],diesel_price,0.003928318026403817,0.07488356237832275
+NPV(A+B+C),e_capex,0.0,0.0
+NPV(A+B+C) - NPV(A+B),e_capex,0.0,0.0
+Reduction(A+B+C) - target,e_capex,0.0,0.0
+1[scenario-best portfolio = A+B+C],e_capex,0.06039788965595868,0.16597143661556124
+NPV(A+B+C),e_kwh_per_l,0.0,0.0
+NPV(A+B+C) - NPV(A+B),e_kwh_per_l,0.0,0.0
+Reduction(A+B+C) - target,e_kwh_per_l,0.0,0.0
+1[scenario-best portfolio = A+B+C],e_kwh_per_l,0.0009820795066009542,0.037319021250836255
+NPV(A+B+C),ef_diesel,0.0,0.0
+NPV(A+B+C) - NPV(A+B),ef_diesel,0.0,0.0
+Reduction(A+B+C) - target,ef_diesel,0.0,0.0
+1[scenario-best portfolio = A+B+C],ef_diesel,0.0,0.0
+NPV(A+B+C),ef_freight,0.0,0.0
+NPV(A+B+C) - NPV(A+B),ef_freight,0.0,0.0
+Reduction(A+B+C) - target,ef_freight,0.0,0.0
+1[scenario-best portfolio = A+B+C],ef_freight,0.0,0.0
+NPV(A+B+C),ef_gas,0.0,0.0
+NPV(A+B+C) - NPV(A+B),ef_gas,0.0,0.0
+Reduction(A+B+C) - target,ef_gas,0.0,0.0
+1[scenario-best portfolio = A+B+C],ef_gas,0.0,0.0
+NPV(A+B+C),ef_grid,0.0,0.0
+NPV(A+B+C) - NPV(A+B),ef_grid,0.0,0.0
+Reduction(A+B+C) - target,ef_grid,0.0,0.0
+1[scenario-best portfolio = A+B+C],ef_grid,0.0,0.0
+NPV(A+B+C),ef_steel_alt,0.0,0.0
+NPV(A+B+C) - NPV(A+B),ef_steel_alt,0.0,0.0
+Reduction(A+B+C) - target,ef_steel_alt,0.0,0.0
+1[scenario-best portfolio = A+B+C],ef_steel_alt,0.0,0.0
+NPV(A+B+C),ef_steel_incumbent,0.0,0.0
+NPV(A+B+C) - NPV(A+B),ef_steel_incumbent,0.0,0.0
+Reduction(A+B+C) - target,ef_steel_incumbent,0.0,0.0
+1[scenario-best portfolio = A+B+C],ef_steel_incumbent,0.0,0.0
+NPV(A+B+C),elec_mwh,0.0005917381699410314,0.0006429685801462807
+NPV(A+B+C) - NPV(A+B),elec_mwh,0.0010193117263599613,0.0010660264196339234
+Reduction(A+B+C) - target,elec_mwh,0.0019503565081567412,0.00203984832774665
+1[scenario-best portfolio = A+B+C],elec_mwh,-0.0024551987665023855,0.024306467788373615
+NPV(A+B+C),f_premium,0.0,0.0
+NPV(A+B+C) - NPV(A+B),f_premium,0.0,0.0
+Reduction(A+B+C) - target,f_premium,0.0,0.0
+1[scenario-best portfolio = A+B+C],f_premium,0.0,0.0
+NPV(A+B+C),freight_tkm,0.0,0.0
+NPV(A+B+C) - NPV(A+B),freight_tkm,0.0,0.0
+Reduction(A+B+C) - target,freight_tkm,0.0,0.0
+1[scenario-best portfolio = A+B+C],freight_tkm,0.0,0.0
+NPV(A+B+C),gas_gj,0.0,0.0
+NPV(A+B+C) - NPV(A+B),gas_gj,0.0,0.0
+Reduction(A+B+C) - target,gas_gj,0.0,0.0
+1[scenario-best portfolio = A+B+C],gas_gj,0.0014731192599014313,0.005892477039605725
+NPV(A+B+C),gas_price_usd,0.0,0.0
+NPV(A+B+C) - NPV(A+B),gas_price_usd,0.0,0.0
+Reduction(A+B+C) - target,gas_price_usd,0.0,0.0
+1[scenario-best portfolio = A+B+C],gas_price_usd,0.014240152845713835,0.08298571830778062
+NPV(A+B+C),pv_capex_kw,0.18396157301636323,0.18391659001125696
+NPV(A+B+C) - NPV(A+B),pv_capex_kw,9.06565556054333e-18,4.893975654676702e-31
+Reduction(A+B+C) - target,pv_capex_kw,0.0,0.0
+1[scenario-best portfolio = A+B+C],pv_capex_kw,0.0,0.0
+NPV(A+B+C),pv_degradation,0.0036636199059441525,0.003691964204696309
+NPV(A+B+C) - NPV(A+B),pv_degradation,2.806463325954836e-18,1.0539343798620463e-31
+Reduction(A+B+C) - target,pv_degradation,0.0,0.0
+1[scenario-best portfolio = A+B+C],pv_degradation,0.0,0.0
+NPV(A+B+C),pv_yield,0.035037616126004166,0.03525803399845574
+NPV(A+B+C) - NPV(A+B),pv_yield,3.728740730832637e-18,2.1954908916269342e-31
+Reduction(A+B+C) - target,pv_yield,0.06322476151988309,0.0630463533257191
+1[scenario-best portfolio = A+B+C],pv_yield,0.0004910397533004771,0.05450541261635296
+NPV(A+B+C),steel_t,0.0,0.0
+NPV(A+B+C) - NPV(A+B),steel_t,0.0,0.0
+Reduction(A+B+C) - target,steel_t,0.0,0.0
+1[scenario-best portfolio = A+B+C],steel_t,0.0,0.0
+NPV(A+B+C),tariff,0.4226649922702131,0.4255982831032321
+NPV(A+B+C) - NPV(A+B),tariff,0.08139497477038835,0.08824129705662707
+Reduction(A+B+C) - target,tariff,0.0,0.0
+1[scenario-best portfolio = A+B+C],tariff,0.032408623717831486,0.22857900516137208

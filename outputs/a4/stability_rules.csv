@@ -1,0 +1,13 @@
+case,rule,choice,status,sampling_unstable,data_unstable,agreement,min_switch_rel,reasons
+C0,D1,A+B+C,STABLE,False,False,1.0,,
+C0,D2,A+B+C,STABLE,False,False,1.0,,
+C0,D3,A+B+C,STABLE,False,False,1.0,,
+C0,D4,A+B+C,STABLE,False,False,1.0,,
+C2,D1,A+B+C,UNSTABLE (data),False,True,0.95,0.014062499999999999,elec_mwh down 1.4% (1.8 sd) switches to A+B
+C2,D2,A+B+C,STABLE,False,False,1.0,,
+C2,D3,A+B+C,STABLE,False,False,1.0,,
+C2,D4,A+B+C,STABLE,False,False,1.0,,
+C4,D1,A+B+C,STABLE,False,False,1.0,,
+C4,D2,A+B+C,STABLE,False,False,1.0,,
+C4,D3,A+B+C,STABLE,False,False,1.0,,
+C4,D4,A+B+C,STABLE,False,False,1.0,,

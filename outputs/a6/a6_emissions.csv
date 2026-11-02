@@ -1,0 +1,10 @@
+item,model,independent,kind,tolerance,rel_diff,pass
+Scope 1,2178.3315000000002,2178.3315000000002,independent,1e-09,0.0,True
+Scope 2,6875.999999999999,6875.999999999999,independent,1e-09,0.0,True
+Scope 3,11723.26,11723.26,independent,1e-09,0.0,True
+Scope 1+2,9054.3315,9054.3315,independent,1e-09,0.0,True
+Total,20777.591500000002,20777.591500000002,independent,1e-09,0.0,True
+Target (15% of Scope 1+2),1358.149725,1358.149725,independent,1e-09,0.0,True
+Natural gas factor re-derived from IPCC 2006 + AR5 GWP (t/GJ),0.0561545,0.0561545,benchmark (primary data),1e-09,0.0,True
+"Diesel factor, IPCC 2006 defaults incl. CH4/N2O, density 0.84 (t/L)",0.00266155,0.0026852691600000003,benchmark (primary data),0.02,2.37191600000004e-05,True
+"Grid factor re-derived: BTR1 205,579 Gg / GASTAT 358,640 GWh (t/MWh)",0.573,0.5732182690162837,benchmark (primary data),0.001,0.0002182690162837453,True

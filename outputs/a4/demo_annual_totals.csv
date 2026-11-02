@@ -1,0 +1,17 @@
+phase,stream,register,unit,n_measured,n_estimated,n_unresolved,measured_total,estimated_total,total,sd_estimate,sd_linear,complete
+as uploaded,production,,t,11,0,1,4592.572625941299,0.0,,0.0,0.0,False
+as uploaded,operating_hours,,h,12,0,0,4160.0,0.0,4160.0,0.0,0.0,True
+as uploaded,electricity,elec_mwh,MWh,9,0,3,9014.553459976421,0.0,,0.0,0.0,False
+as uploaded,natural_gas,gas_gj,GJ,9,0,3,25976.04461763396,0.0,,0.0,0.0,False
+as uploaded,diesel_forklift,diesel_forklift_l,L,11,0,1,54755.48586344084,0.0,,0.0,0.0,False
+as uploaded,diesel_genset,diesel_genset_l,L,12,0,0,20000.000000000004,0.0,20000.000000000004,0.0,0.0,True
+as uploaded,steel_purchased,steel_t,t,11,0,1,5512.210542866987,0.0,,0.0,0.0,False
+as uploaded,freight,freight_tkm,t-km,12,0,0,2000000.0000000002,0.0,2000000.0000000002,0.0,0.0,True
+after review,production,,t,11,1,0,4592.572625941299,391.9071610934243,4984.479787034722,25.11762909252858,25.11762909252858,True
+after review,operating_hours,,h,12,0,0,4160.0,0.0,4160.0,0.0,0.0,True
+after review,electricity,elec_mwh,MWh,9,3,0,9014.553459976421,3097.907532453808,12112.46099243023,96.58536110839962,150.23153083125766,True
+after review,natural_gas,gas_gj,GJ,9,3,0,25976.04461763396,8917.445539806142,34893.4901574401,343.2965981407524,533.9729838558644,True
+after review,diesel_forklift,diesel_forklift_l,L,11,1,0,54755.48586344084,4977.771442130986,59733.257305571824,509.58836139851127,509.58836139851127,True
+after review,diesel_genset,diesel_genset_l,L,12,0,0,20000.000000000004,0.0,20000.000000000004,0.0,0.0,True
+after review,steel_purchased,steel_t,t,11,1,0,5512.210542866987,483.9045354583926,5996.11507832538,48.15152488515986,48.15152488515986,True
+after review,freight,freight_tkm,t-km,12,0,0,2000000.0000000002,0.0,2000000.0000000002,0.0,0.0,True

@@ -1,0 +1,13 @@
+{
+ "recalc": {
+  "status": "success",
+  "engine": "LibreOffice",
+  "total_formulas": 1023,
+  "total_errors": 0,
+  "errors": [],
+  "formulas_without_value": 0
+ },
+ "checks": 52,
+ "all_pass": true,
+ "failures": []
+}

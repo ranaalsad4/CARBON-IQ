@@ -1,0 +1,22 @@
+measurement,label,keys,post_sd_frac,rule,prior_choice,value_npv,value_npv_sd_seeds,d_p_target,cost_sar,cost_status,net_value,worth_it,posterior_choices
+M1,Duplicate electricity bills for the missing months (utility portal / account manager),elec_mwh,0.0,D2,A+B+C,0.0,0.0,0.0,600,hypothetical (staff time),-600.0,False,A+B+C 100%
+M1,Duplicate electricity bills for the missing months (utility portal / account manager),elec_mwh,0.0,D3,A+B+C,0.0,0.0,0.0,600,hypothetical (staff time),-600.0,False,A+B+C 100%
+M1,Duplicate electricity bills for the missing months (utility portal / account manager),elec_mwh,0.0,D4,A+B+C,0.0,0.0,0.0,600,hypothetical (staff time),-600.0,False,A+B+C 100%
+M2,Gas supplier statements for the missing months,gas_gj,0.0,D2,A+B+C,0.0,0.0,0.0,600,hypothetical (staff time),-600.0,False,A+B+C 100%
+M2,Gas supplier statements for the missing months,gas_gj,0.0,D3,A+B+C,0.0,0.0,0.0,600,hypothetical (staff time),-600.0,False,A+B+C 100%
+M2,Gas supplier statements for the missing months,gas_gj,0.0,D4,A+B+C,0.0,0.0,0.0,600,hypothetical (staff time),-600.0,False,A+B+C 100%
+M3,Fuel-card statements for forklift diesel,diesel_forklift_l,0.0,D2,A+B+C,0.0,0.0,0.0,450,hypothetical (staff time),-450.0,False,A+B+C 100%
+M3,Fuel-card statements for forklift diesel,diesel_forklift_l,0.0,D3,A+B+C,0.0,0.0,0.0,450,hypothetical (staff time),-450.0,False,A+B+C 100%
+M3,Fuel-card statements for forklift diesel,diesel_forklift_l,0.0,D4,A+B+C,0.0,0.0,0.0,450,hypothetical (staff time),-450.0,False,A+B+C 100%
+M4,Steel delivery notes / supplier invoices,steel_t,0.0,D2,A+B+C,0.0,0.0,0.0,900,hypothetical (staff time),-900.0,False,A+B+C 100%
+M4,Steel delivery notes / supplier invoices,steel_t,0.0,D3,A+B+C,0.0,0.0,0.0,900,hypothetical (staff time),-900.0,False,A+B+C 100%
+M4,Steel delivery notes / supplier invoices,steel_t,0.0,D4,A+B+C,0.0,0.0,0.0,900,hypothetical (staff time),-900.0,False,A+B+C 100%
+M5,Production records for the missing month,production_t,0.0,D2,A+B+C,0.0,0.0,0.0,300,hypothetical (staff time),-300.0,False,A+B+C 100%
+M5,Production records for the missing month,production_t,0.0,D3,A+B+C,0.0,0.0,0.0,300,hypothetical (staff time),-300.0,False,A+B+C 100%
+M5,Production records for the missing month,production_t,0.0,D4,A+B+C,0.0,0.0,0.0,300,hypothetical (staff time),-300.0,False,A+B+C 100%
+M6,Engineering reconstruction of electricity from equipment run-hours (no bills; residual error 50% of the estimate's),elec_mwh,0.5,D2,A+B+C,0.0,0.0,0.0,2400,hypothetical (staff time),-2400.0,False,A+B+C 100%
+M6,Engineering reconstruction of electricity from equipment run-hours (no bills; residual error 50% of the estimate's),elec_mwh,0.5,D3,A+B+C,0.0,0.0,0.0,2400,hypothetical (staff time),-2400.0,False,A+B+C 100%
+M6,Engineering reconstruction of electricity from equipment run-hours (no bills; residual error 50% of the estimate's),elec_mwh,0.5,D4,A+B+C,0.0,0.0,0.0,2400,hypothetical (staff time),-2400.0,False,A+B+C 100%
+M7,All missing records (M1-M5 together),elec_mwh+gas_gj+diesel_forklift_l+steel_t+production_t,0.0,D2,A+B+C,0.0,0.0,0.0,2850,hypothetical (staff time),-2850.0,False,A+B+C 100%
+M7,All missing records (M1-M5 together),elec_mwh+gas_gj+diesel_forklift_l+steel_t+production_t,0.0,D3,A+B+C,0.0,0.0,0.0,2850,hypothetical (staff time),-2850.0,False,A+B+C 100%
+M7,All missing records (M1-M5 together),elec_mwh+gas_gj+diesel_forklift_l+steel_t+production_t,0.0,D4,A+B+C,0.0,0.0,0.0,2850,hypothetical (staff time),-2850.0,False,A+B+C 100%

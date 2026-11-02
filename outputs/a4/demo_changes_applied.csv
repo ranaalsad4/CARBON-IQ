@@ -1,0 +1,12 @@
+period,stream,change
+2026-06,electricity,row deleted (missing bill)
+2026-07,electricity,row deleted (missing bill)
+2026-10,electricity,reported in kWh
+2026-12,electricity,entered as 0 (bill not yet received)
+2026-03,natural_gas,blank value
+2026-09,natural_gas,"second, conflicting record (+8%)"
+2026-05,natural_gas,typing error x10
+2026-11,diesel_forklift,row deleted
+2026-04,diesel_forklift,identical duplicate
+2026-02,production,negative value
+2026-08,steel_purchased,row deleted

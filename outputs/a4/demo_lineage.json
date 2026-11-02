@@ -1,0 +1,3746 @@
+{
+ "source": "SYNTHETIC demo dataset",
+ "raw_sha256": "642c5647a9be60e60e2a52417f0315cb6e2e51229acdc4b0d550223a237c4a44",
+ "year": 2026,
+ "rules": {
+  "MIN_MEASURED": 6,
+  "MAX_GAP_RUN": 3,
+  "MAX_REL_ERR": 0.25,
+  "CP_ALPHA": 0.01,
+  "CP_MIN_SHIFT": 0.1,
+  "MIN_REGIME": 4,
+  "PROD_ANOMALY": 0.3,
+  "CAL_MONTHLY": 1.0898,
+  "RHO_ANNUAL": 0.12,
+  "calibrated": true
+ },
+ "methods": {
+  "intensity": "production-intensity: (measured stream / measured production) x production of the month",
+  "seasonal_history": "seasonal history: same month last year x year-on-year ratio over months measured in both years",
+  "mean": "mean of measured months of the year"
+ },
+ "events": [
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "load",
+   "by": "system",
+   "detail": "190 records from SYNTHETIC demo dataset; sha256 642c5647a9be"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-02 production: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-06 electricity: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-07 electricity: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-12 electricity: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-03 natural_gas: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-09 natural_gas: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-08 steel_purchased: bulk approval"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "approve",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-05 natural_gas: x10 typing error confirmed; use estimate"
+  },
+  {
+   "time": "2026-10-26T15:02:48Z",
+   "action": "override_change",
+   "by": "demo reviewer",
+   "detail": "PLANT-01 2026-11 diesel_forklift: reviewer confirms no operational change at the plant (the synthetic truth contains none); fallback estimate used"
+  }
+ ],
+ "cells": [
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00097"
+   ],
+   "raw_values": [
+    408.4036230251
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 408.4036230251,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 408.4036230251,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00098"
+   ],
+   "raw_values": [
+    -407.4273740587
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "NEGATIVE_VALUE"
+   ],
+   "value": null,
+   "method": "seasonal_history",
+   "candidates": "{\"seasonal_history\": {\"estimate\": 391.907161, \"rmse\": 19.411155, \"n\": 11, \"rel\": 0.046493, \"regime_only\": false}, \"mean\": {\"estimate\": 417.506602, \"rmse\": 23.368596, \"n\": 11, \"rel\": 0.055972, \"regime_only\": false}}",
+   "estimate": 391.9071610934,
+   "sd": 25.1176290925,
+   "low95": 342.6766080721,
+   "high95": 441.1377141148,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 391.9071610934,
+   "final_label": "estimated (seasonal_history)",
+   "final_sd": 25.1176290925,
+   "method_text": "seasonal history: same month last year x year-on-year ratio over months measured in both years"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00099"
+   ],
+   "raw_values": [
+    403.8676481633
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 403.8676481633,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 403.8676481633,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00100"
+   ],
+   "raw_values": [
+    428.8841934035
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 428.8841934035,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 428.8841934035,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00101"
+   ],
+   "raw_values": [
+    454.8188022713
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 454.8188022713,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 454.8188022713,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00102"
+   ],
+   "raw_values": [
+    399.8875971222
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 399.8875971222,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 399.8875971222,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00103"
+   ],
+   "raw_values": [
+    393.9126443781
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 393.9126443781,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 393.9126443781,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00104"
+   ],
+   "raw_values": [
+    400.5108546945
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 400.5108546945,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 400.5108546945,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00105"
+   ],
+   "raw_values": [
+    422.1411407261
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 422.1411407261,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 422.1411407261,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00106"
+   ],
+   "raw_values": [
+    437.5531207324
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 437.5531207324,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 437.5531207324,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00107"
+   ],
+   "raw_values": [
+    449.2777719547
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 449.2777719547,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 449.2777719547,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "production",
+   "unit": "t",
+   "record_ids": [
+    "R00108"
+   ],
+   "raw_values": [
+    393.3152294701
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 393.3152294701,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 393.3152294701,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00109"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00110"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00111"
+   ],
+   "raw_values": [
+    320.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 320.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 320.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00112"
+   ],
+   "raw_values": [
+    320.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 320.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 320.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00113"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00114"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00115"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00116"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00117"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00118"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00119"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "operating_hours",
+   "unit": "h",
+   "record_ids": [
+    "R00120"
+   ],
+   "raw_values": [
+    352.0
+   ],
+   "raw_units": [
+    "h"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 352.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 352.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00121"
+   ],
+   "raw_values": [
+    961.2927247738
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 961.2927247738,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 961.2927247738,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00122"
+   ],
+   "raw_values": [
+    887.7587838384
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 887.7587838384,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 887.7587838384,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00123"
+   ],
+   "raw_values": [
+    965.3750488776
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 965.3750488776,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 965.3750488776,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00124"
+   ],
+   "raw_values": [
+    1014.2419851868
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 1014.2419851868,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 1014.2419851868,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00125"
+   ],
+   "raw_values": [
+    1109.3937562311
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 1109.3937562311,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 1109.3937562311,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [],
+   "raw_values": [],
+   "raw_units": [],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "MISSING_ROW"
+   ],
+   "value": null,
+   "method": "seasonal_history",
+   "candidates": "{\"seasonal_history\": {\"estimate\": 1078.55174, \"rmse\": 37.051883, \"n\": 9, \"rel\": 0.036992, \"regime_only\": false}, \"intensity\": {\"estimate\": 954.293138, \"rmse\": 45.579908, \"n\": 8, \"rel\": 0.044869, \"regime_only\": false}, \"mean\": {\"estimate\": 1001.617051, \"rmse\": 65.164916, \"n\": 9, \"rel\": 0.06506, \"regime_only\": false}}",
+   "estimate": 1078.5517400398,
+   "sd": 50.0771769438,
+   "low95": 980.40047323,
+   "high95": 1176.7030068495,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 1078.5517400398,
+   "final_label": "estimated (seasonal_history)",
+   "final_sd": 50.0771769438,
+   "method_text": "seasonal history: same month last year x year-on-year ratio over months measured in both years"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [],
+   "raw_values": [],
+   "raw_units": [],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "MISSING_ROW"
+   ],
+   "value": null,
+   "method": "seasonal_history",
+   "candidates": "{\"seasonal_history\": {\"estimate\": 1062.866751, \"rmse\": 37.051883, \"n\": 9, \"rel\": 0.036992, \"regime_only\": false}, \"intensity\": {\"estimate\": 940.03449, \"rmse\": 45.579908, \"n\": 8, \"rel\": 0.044869, \"regime_only\": false}, \"mean\": {\"estimate\": 1001.617051, \"rmse\": 65.164916, \"n\": 9, \"rel\": 0.06506, \"regime_only\": false}}",
+   "estimate": 1062.8667511402,
+   "sd": 50.0771769438,
+   "low95": 964.7154843305,
+   "high95": 1161.01801795,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 1062.8667511402,
+   "final_label": "estimated (seasonal_history)",
+   "final_sd": 50.0771769438,
+   "method_text": "seasonal history: same month last year x year-on-year ratio over months measured in both years"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00128"
+   ],
+   "raw_values": [
+    1017.141386841
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 1017.141386841,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 1017.141386841,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00129"
+   ],
+   "raw_values": [
+    1045.7970964271
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 1045.7970964271,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 1045.7970964271,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00130"
+   ],
+   "raw_values": [
+    1018449.5810647772
+   ],
+   "raw_units": [
+    "kWh"
+   ],
+   "notes": "",
+   "status": "converted",
+   "issues": [
+    "UNIT_CONVERTED:kWh->MWh"
+   ],
+   "value": 1018.4495810648,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 1018.4495810648,
+   "final_label": "converted",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00131"
+   ],
+   "raw_values": [
+    995.1030967358
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 995.1030967358,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 995.1030967358,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "electricity",
+   "unit": "MWh",
+   "record_ids": [
+    "R00132"
+   ],
+   "raw_values": [
+    0.0
+   ],
+   "raw_units": [
+    "MWh"
+   ],
+   "notes": "",
+   "status": "suspected_zero",
+   "issues": [
+    "SUSPECTED_MISSING_ZERO"
+   ],
+   "value": 0.0,
+   "method": "seasonal_history",
+   "candidates": "{\"seasonal_history\": {\"estimate\": 956.489041, \"rmse\": 37.051883, \"n\": 9, \"rel\": 0.036992, \"regime_only\": false}, \"intensity\": {\"estimate\": 938.608817, \"rmse\": 45.579908, \"n\": 8, \"rel\": 0.044869, \"regime_only\": false}, \"mean\": {\"estimate\": 1001.617051, \"rmse\": 65.164916, \"n\": 9, \"rel\": 0.06506, \"regime_only\": false}}",
+   "estimate": 956.4890412738,
+   "sd": 50.0771769438,
+   "low95": 858.3377744641,
+   "high95": 1054.6403080836,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 956.4890412738,
+   "final_label": "estimated (seasonal_history)",
+   "final_sd": 50.0771769438,
+   "method_text": "seasonal history: same month last year x year-on-year ratio over months measured in both years"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00133"
+   ],
+   "raw_values": [
+    2860.2000126302
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2860.2000126302,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2860.2000126302,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00134"
+   ],
+   "raw_values": [
+    2918.8383291449
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2918.8383291449,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2918.8383291449,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00135"
+   ],
+   "raw_values": [
+    null
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "BLANK_OR_NONNUMERIC"
+   ],
+   "value": null,
+   "method": "intensity",
+   "candidates": "{\"intensity\": {\"estimate\": 2811.828682, \"rmse\": 127.63474, \"n\": 8, \"rel\": 0.044285, \"regime_only\": false}, \"seasonal_history\": {\"estimate\": 2970.64201, \"rmse\": 247.335056, \"n\": 9, \"rel\": 0.085695, \"regime_only\": false}, \"mean\": {\"estimate\": 2886.22718, \"rmse\": 208.279696, \"n\": 9, \"rel\": 0.072163, \"regime_only\": false}}",
+   "estimate": 2811.8286822053,
+   "sd": 177.9909946186,
+   "low95": 2462.9663327528,
+   "high95": 3160.6910316578,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 2811.8286822053,
+   "final_label": "estimated (intensity)",
+   "final_sd": 177.9909946186,
+   "method_text": "production-intensity: (measured stream / measured production) x production of the month"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00136"
+   ],
+   "raw_values": [
+    3012.831385616
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 3012.831385616,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 3012.831385616,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00137"
+   ],
+   "raw_values": [
+    33226.6947701673
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "outlier",
+   "issues": [
+    "OUTLIER:robust z = 156.7 (intensity)"
+   ],
+   "value": 33226.6947701673,
+   "method": "intensity",
+   "candidates": "{\"intensity\": {\"estimate\": 3166.5635, \"rmse\": 127.63474, \"n\": 8, \"rel\": 0.044285, \"regime_only\": false}, \"seasonal_history\": {\"estimate\": 3143.375749, \"rmse\": 247.335056, \"n\": 9, \"rel\": 0.085695, \"regime_only\": false}, \"mean\": {\"estimate\": 2886.22718, \"rmse\": 208.279696, \"n\": 9, \"rel\": 0.072163, \"regime_only\": false}}",
+   "estimate": 3166.5634998217,
+   "sd": 177.9909946186,
+   "low95": 2817.7011503692,
+   "high95": 3515.4258492742,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "x10 typing error confirmed; use estimate",
+   "final_value": 3166.5634998217,
+   "final_label": "estimated (intensity)",
+   "final_sd": 177.9909946186,
+   "method_text": "production-intensity: (measured stream / measured production) x production of the month"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00138"
+   ],
+   "raw_values": [
+    2695.4841433857
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2695.4841433857,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2695.4841433857,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00139"
+   ],
+   "raw_values": [
+    2846.1556026628
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2846.1556026628,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2846.1556026628,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00140"
+   ],
+   "raw_values": [
+    2840.6789304704
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2840.6789304704,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2840.6789304704,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00141",
+    "R99001"
+   ],
+   "raw_values": [
+    2960.9306135246,
+    3197.8050626066
+   ],
+   "raw_units": [
+    "GJ",
+    "GJ"
+   ],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "DUPLICATE_CONFLICT"
+   ],
+   "value": null,
+   "method": "intensity",
+   "candidates": "{\"intensity\": {\"estimate\": 2939.053358, \"rmse\": 127.63474, \"n\": 8, \"rel\": 0.044285, \"regime_only\": false}, \"seasonal_history\": {\"estimate\": 3326.687572, \"rmse\": 247.335056, \"n\": 9, \"rel\": 0.085695, \"regime_only\": false}, \"mean\": {\"estimate\": 2886.22718, \"rmse\": 208.279696, \"n\": 9, \"rel\": 0.072163, \"regime_only\": false}}",
+   "estimate": 2939.0533577791,
+   "sd": 177.9909946186,
+   "low95": 2590.1910083266,
+   "high95": 3287.9157072316,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 2939.0533577791,
+   "final_label": "estimated (intensity)",
+   "final_sd": 177.9909946186,
+   "method_text": "production-intensity: (measured stream / measured production) x production of the month"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00142"
+   ],
+   "raw_values": [
+    2874.8294798471
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2874.8294798471,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2874.8294798471,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00143"
+   ],
+   "raw_values": [
+    3308.8929035912
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 3308.8929035912,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 3308.8929035912,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "natural_gas",
+   "unit": "GJ",
+   "record_ids": [
+    "R00144"
+   ],
+   "raw_values": [
+    2618.1338302857
+   ],
+   "raw_units": [
+    "GJ"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 2618.1338302857,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 2618.1338302857,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00145"
+   ],
+   "raw_values": [
+    4393.7858990937
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4393.7858990937,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4393.7858990937,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00146"
+   ],
+   "raw_values": [
+    4985.7169903225
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4985.7169903225,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4985.7169903225,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00147"
+   ],
+   "raw_values": [
+    4826.8566239541
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4826.8566239541,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4826.8566239541,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00148",
+    "R99002"
+   ],
+   "raw_values": [
+    4446.8156552642,
+    4446.8156552642
+   ],
+   "raw_units": [
+    "L",
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [
+    "DUPLICATE_IDENTICAL"
+   ],
+   "value": 4446.8156552642,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4446.8156552642,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00149"
+   ],
+   "raw_values": [
+    5171.4327685514
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 5171.4327685514,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 5171.4327685514,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00150"
+   ],
+   "raw_values": [
+    4962.5065876244
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4962.5065876244,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4962.5065876244,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00151"
+   ],
+   "raw_values": [
+    4689.382491812
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4689.382491812,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4689.382491812,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00152"
+   ],
+   "raw_values": [
+    4968.1787207103
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4968.1787207103,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4968.1787207103,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00153"
+   ],
+   "raw_values": [
+    5489.7473758749
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 5489.7473758749,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 5489.7473758749,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00154"
+   ],
+   "raw_values": [
+    5353.785874463
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 5353.785874463,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 5353.785874463,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [],
+   "raw_values": [],
+   "raw_units": [],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "MISSING_ROW"
+   ],
+   "value": null,
+   "method": "",
+   "candidates": "{}",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "OPERATIONAL_CHANGE: too few months in the current operating regime (< 4) for mean, intensity, seasonal_history",
+   "warning": "OPERATIONAL_CHANGE: mean assumption shifts +13% from 2026-09 (permutation p=0.004); all methods trained on the new regime only",
+   "fallback_method": "mean",
+   "fallback_estimate": 4977.771442131,
+   "fallback_sd": 509.5883613985,
+   "decision": "change_overridden",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "reviewer confirms no operational change at the plant (the synthetic truth contains none); fallback estimate used",
+   "final_value": 4977.771442131,
+   "final_label": "estimated (mean; change override)",
+   "final_sd": 509.5883613985,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "diesel_forklift",
+   "unit": "L",
+   "record_ids": [
+    "R00156"
+   ],
+   "raw_values": [
+    5467.2768757702
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 5467.2768757702,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 5467.2768757702,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00157"
+   ],
+   "raw_values": [
+    0.0
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [
+    "LEGITIMATE_ZERO:intermittent stream"
+   ],
+   "value": 0.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 0.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00158"
+   ],
+   "raw_values": [
+    0.0
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [
+    "LEGITIMATE_ZERO:intermittent stream"
+   ],
+   "value": 0.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 0.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00159"
+   ],
+   "raw_values": [
+    435.4965370099
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 435.4965370099,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 435.4965370099,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00160"
+   ],
+   "raw_values": [
+    588.6277786125
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 588.6277786125,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 588.6277786125,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00161"
+   ],
+   "raw_values": [
+    1779.7666919255
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 1779.7666919255,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 1779.7666919255,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00162"
+   ],
+   "raw_values": [
+    4012.5495598635
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 4012.5495598635,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 4012.5495598635,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00163"
+   ],
+   "raw_values": [
+    6470.4526789159
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 6470.4526789159,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 6470.4526789159,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00164"
+   ],
+   "raw_values": [
+    5323.8808182
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 5323.8808182,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 5323.8808182,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00165"
+   ],
+   "raw_values": [
+    978.4959409048
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 978.4959409048,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 978.4959409048,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00166"
+   ],
+   "raw_values": [
+    410.729994568
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 410.729994568,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 410.729994568,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00167"
+   ],
+   "raw_values": [
+    0.0
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [
+    "LEGITIMATE_ZERO:intermittent stream"
+   ],
+   "value": 0.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 0.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "diesel_genset",
+   "unit": "L",
+   "record_ids": [
+    "R00168"
+   ],
+   "raw_values": [
+    0.0
+   ],
+   "raw_units": [
+    "L"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [
+    "LEGITIMATE_ZERO:intermittent stream"
+   ],
+   "value": 0.0,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 0.0,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00169"
+   ],
+   "raw_values": [
+    498.4709524775
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 498.4709524775,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 498.4709524775,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00170"
+   ],
+   "raw_values": [
+    447.28488542
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 447.28488542,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 447.28488542,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00171"
+   ],
+   "raw_values": [
+    528.813382022
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 528.813382022,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 528.813382022,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00172"
+   ],
+   "raw_values": [
+    500.3807318827
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 500.3807318827,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 500.3807318827,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00173"
+   ],
+   "raw_values": [
+    484.831783178
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 484.831783178,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 484.831783178,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00174"
+   ],
+   "raw_values": [
+    443.8143437698
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 443.8143437698,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 443.8143437698,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00175"
+   ],
+   "raw_values": [
+    505.7070024293
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 505.7070024293,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 505.7070024293,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [],
+   "raw_values": [],
+   "raw_units": [],
+   "notes": "",
+   "status": "missing",
+   "issues": [
+    "MISSING_ROW"
+   ],
+   "value": null,
+   "method": "intensity",
+   "candidates": "{\"intensity\": {\"estimate\": 483.904535, \"rmse\": 36.500616, \"n\": 10, \"rel\": 0.072065, \"regime_only\": false}}",
+   "estimate": 483.9045354584,
+   "sd": 48.1515248852,
+   "low95": 389.5275466835,
+   "high95": 578.2815242333,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "approved",
+   "decided_by": "demo reviewer",
+   "decided_at": "2026-10-26T15:02:48Z",
+   "decision_note": "bulk approval",
+   "final_value": 483.9045354584,
+   "final_label": "estimated (intensity)",
+   "final_sd": 48.1515248852,
+   "method_text": "production-intensity: (measured stream / measured production) x production of the month"
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00177"
+   ],
+   "raw_values": [
+    541.1415554248
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 541.1415554248,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 541.1415554248,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00178"
+   ],
+   "raw_values": [
+    527.0214552297
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 527.0214552297,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 527.0214552297,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00179"
+   ],
+   "raw_values": [
+    528.6004344954
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 528.6004344954,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 528.6004344954,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "steel_purchased",
+   "unit": "t",
+   "record_ids": [
+    "R00180"
+   ],
+   "raw_values": [
+    506.1440165379
+   ],
+   "raw_units": [
+    "t"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 506.1440165379,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 506.1440165379,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-01",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00181"
+   ],
+   "raw_values": [
+    159434.3140073203
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 159434.3140073203,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 159434.3140073203,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-02",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00182"
+   ],
+   "raw_values": [
+    164837.9630301948
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 164837.9630301948,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 164837.9630301948,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-03",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00183"
+   ],
+   "raw_values": [
+    172480.1672831184
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 172480.1672831184,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 172480.1672831184,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-04",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00184"
+   ],
+   "raw_values": [
+    160983.4105077026
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 160983.4105077026,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 160983.4105077026,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-05",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00185"
+   ],
+   "raw_values": [
+    162929.8678810055
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 162929.8678810055,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 162929.8678810055,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-06",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00186"
+   ],
+   "raw_values": [
+    143363.4005895795
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 143363.4005895795,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 143363.4005895795,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-07",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00187"
+   ],
+   "raw_values": [
+    161947.0625806442
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 161947.0625806442,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 161947.0625806442,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-08",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00188"
+   ],
+   "raw_values": [
+    167054.1133153432
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 167054.1133153432,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 167054.1133153432,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-09",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00189"
+   ],
+   "raw_values": [
+    174536.2568390096
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 174536.2568390096,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 174536.2568390096,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-10",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00190"
+   ],
+   "raw_values": [
+    190010.7417343557
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 190010.7417343557,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 190010.7417343557,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-11",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00191"
+   ],
+   "raw_values": [
+    180234.6179738035
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 180234.6179738035,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 180234.6179738035,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  },
+  {
+   "site": "PLANT-01",
+   "period": "2026-12",
+   "stream": "freight",
+   "unit": "t-km",
+   "record_ids": [
+    "R00192"
+   ],
+   "raw_values": [
+    162188.0842579227
+   ],
+   "raw_units": [
+    "t-km"
+   ],
+   "notes": "",
+   "status": "measured",
+   "issues": [],
+   "value": 162188.0842579227,
+   "method": "",
+   "candidates": "",
+   "estimate": null,
+   "sd": null,
+   "low95": null,
+   "high95": null,
+   "refusal": "",
+   "warning": "",
+   "fallback_method": "",
+   "fallback_estimate": null,
+   "fallback_sd": null,
+   "decision": "",
+   "decided_by": "",
+   "decided_at": "",
+   "decision_note": "",
+   "final_value": 162188.0842579227,
+   "final_label": "measured",
+   "final_sd": 0.0,
+   "method_text": ""
+  }
+ ]
+}

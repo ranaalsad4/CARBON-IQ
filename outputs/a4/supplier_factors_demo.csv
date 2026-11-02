@@ -1,0 +1,3 @@
+supplier,material,quantity_t,ef_tco2_per_t,ef_source,ef_label,ef_used,ef_low,ef_high
+Supplier S1 (synthetic),steel,3600.0,,,proxy: worldsteel 2025 global average 1.92 tCO2/t (range DRI-EAF 1.47 - BF-BOF 2.34),1.92,1.47,2.34
+Supplier S2 (synthetic),steel,2400.0,,,proxy: worldsteel 2025 global average 1.92 tCO2/t (range DRI-EAF 1.47 - BF-BOF 2.34),1.92,1.47,2.34

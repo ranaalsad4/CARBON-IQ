@@ -1,0 +1,31 @@
+check,source,item,expected,result
+current figure present,Complete project report,recommended portfolio (D4),A+B+C,found
+current figure present,Complete project report,D1 NPV,"1,563,087 or 1.56M",found
+current figure present,Complete project report,E[NPV] of the recommendation,"2,557,033 or 2.56M",found
+current figure present,Complete project report,Scope 1+2 baseline,"9,054 or 9,054.3",found
+current figure present,Complete project report,target,"1,358 or 1,358.1",found
+current figure present,Complete project report,P(capex <= budget),98.9%,found
+current figure present,Complete project report,grid factor,0.573,found
+current figure present,A4 missing-data report,recommended portfolio (D4),A+B+C,found
+current figure present,A4 missing-data report,Scope 1+2 baseline,"9,054 or 9,054.3",found
+current figure present,A5 methodology report,recommended portfolio (D4),A+B+C,found
+current figure present,A5 methodology report,D1 NPV,"1,563,087 or 1.56M",found
+current figure present,A5 methodology report,E[NPV] of the recommendation,"2,557,033 or 2.56M",found
+current figure present,A5 methodology report,Scope 1+2 baseline,"9,054 or 9,054.3",found
+current figure present,A5 methodology report,target,"1,358 or 1,358.1",found
+current figure present,A5 methodology report,P(capex <= budget),98.9%,found
+current figure present,A5 methodology report,grid factor,0.573,found
+current figure present,A6 validation report,recommended portfolio (D4),A+B+C,found
+current figure present,A6 validation report,D1 NPV,"1,563,087 or 1.56M",found
+current figure present,A6 validation report,E[NPV] of the recommendation,"2,557,033 or 2.56M",found
+current figure present,A6 validation report,Scope 1+2 baseline,"9,054 or 9,054.3",found
+current figure present,A6 validation report,target,"1,358 or 1,358.1",found
+current figure present,A6 validation report,P(capex <= budget),98.9%,found
+current figure present,A6 validation report,grid factor,0.573,found
+current figure present,Streamlit app,recommended portfolio (D4),A+B+C,found
+current figure present,Streamlit app,D1 NPV,"1,563,087 or 1.56M",found
+current figure present,Streamlit app,E[NPV] of the recommendation,"2,557,033 or 2.56M",found
+current figure present,Streamlit app,Scope 1+2 baseline,"9,054 or 9,054.3",found
+current figure present,Streamlit app,target,"1,358 or 1,358.1",found
+current figure present,Streamlit app,P(capex <= budget),98.9%,found
+current figure present,Streamlit app,grid factor,0.573,found

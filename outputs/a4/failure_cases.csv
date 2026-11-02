@@ -1,0 +1,10 @@
+case,method,estimate,true,rel_err,covered,outcome
+"Structural break (+30% electricity from Sep), Oct missing - change detection OFF",intensity,1137.190648631478,1323.9844553842104,-0.14108459203814905,True,biased: assumes a stable relationship
+"Structural break (+30% electricity from Sep), Oct missing - change detection ON",,,1323.9844553842104,,,refused: OPERATIONAL_CHANGE: gap at the change point; regime unknown
+"Structural break (+30% electricity from Jun), Oct missing - change detection OFF",seasonal_history,1196.7503357129858,1323.9844553842104,-0.09609940596644102,True,uses months from both regimes
+"Structural break (+30% electricity from Jun), Oct missing - change detection ON",seasonal_history,1326.0223085291611,1323.9844553842104,0.001539182077752861,True,trained on the new regime only: OPERATIONAL_CHANGE: seasonal_history assumption shifts +28% 
+Demo dataset: Dec electricity entered as 0 (seasonal low month),seasonal_history,956.4890412738466,879.5853549975668,0.08743174933431282,True,estimate +8.7% vs truth; inside the 95% interval
+Demo dataset: forklift diesel Nov missing; random +12% level in Sep-Dec of the synthetic truth (no real change),mean,4977.771442130986,5244.514136559158,-0.05086127856319938,True,FALSE ALARM: OPERATIONAL_CHANGE: too few months in the current operating regime (< ; reviewer override uses the fallback shown
+Six consecutive months of electricity missing,,,,,,refused: GAP_TOO_LONG: run of 6 consecutive missing months (> 3)
+"Production, electricity and gas all missing in April",mean,2907.924419489453,3012.8313856160185,-0.034820058841465995,True,intensity method not eligible (no production); falls back to the next method
+"Only 5 measured months of electricity, no history year",,,,,,refused: TOO_FEW_MEASURED: 5 usable months (< 6)

@@ -1,0 +1,17 @@
+{
+ "sources": [
+  "Complete project report",
+  "A4 missing-data report",
+  "A5 methodology report",
+  "A6 validation report",
+  "Streamlit app"
+ ],
+ "app_exception": false,
+ "missing": [],
+ "stale_hits": [],
+ "main_crosscheck_rows": 149,
+ "independent_workbook": {
+  "all_pass": true,
+  "checks": 52
+ }
+}

@@ -1,0 +1,74 @@
+{
+ "recalc": {
+  "status": "success",
+  "engine": "LibreOffice",
+  "total_formulas": 35,
+  "total_errors": 0,
+  "errors": [],
+  "formulas_without_value": 0
+ },
+ "derived": {
+  "Reduction as % of Scope 1+2 baseline": 0.193853472230391,
+  "Reduction vs target (ratio)": 1.29235648153594,
+  "Budget headroom at quoted capex (SAR)": 950000,
+  "Net value of sub-metering (EVPPI - assumed cost, SAR)": -4046.00378265884,
+  "Error in Scope 1+2 if missing months were counted as zero": -0.24644062424708,
+  "All trace checks pass": true
+ },
+ "portfolio": "A+B+C",
+ "optimal_equals_d4": true,
+ "comparison": [
+  {
+   "method": "Rank by NPV per riyal (profitability index)",
+   "rule": "Fund projects one by one in this order while the quoted budget allows (no uncertainty)",
+   "portfolio": "A+B+C",
+   "quoted_capex": 4050000.0,
+   "npv_base": 1563086.5522340164,
+   "reduction_t": 1755.2135999999998,
+   "meets_target_base": true,
+   "e_npv": 2557032.5241093887,
+   "p_target": 0.999955,
+   "p_budget": 0.988325,
+   "p_loss": 0.0011
+  },
+  {
+   "method": "Rank by NPV",
+   "rule": "Fund projects one by one in this order while the quoted budget allows (no uncertainty)",
+   "portfolio": "A+B+C",
+   "quoted_capex": 4050000.0,
+   "npv_base": 1563086.5522340164,
+   "reduction_t": 1755.2135999999998,
+   "meets_target_base": true,
+   "e_npv": 2557032.5241093887,
+   "p_target": 0.999955,
+   "p_budget": 0.988325,
+   "p_loss": 0.0011
+  },
+  {
+   "method": "Rank by abatement cost (MAC), cheapest first",
+   "rule": "Fund projects one by one in this order while the quoted budget allows (no uncertainty)",
+   "portfolio": "A+B+C+D+F",
+   "quoted_capex": 4700000.0,
+   "npv_base": -560808.0443409998,
+   "reduction_t": 2050.0247249999998,
+   "meets_target_base": true,
+   "e_npv": 322021.2014055868,
+   "p_target": 1.0,
+   "p_budget": 0.7577,
+   "p_loss": 0.40015
+  },
+  {
+   "method": "CARBON IQ primary rule D4",
+   "rule": "Max expected NPV s.t. P(target) >= 90% and P(actual capex <= budget) >= 90%",
+   "portfolio": "A+B+C",
+   "quoted_capex": 4050000.0,
+   "npv_base": 1563086.5522340164,
+   "reduction_t": 1755.2135999999998,
+   "meets_target_base": true,
+   "e_npv": 2557032.5241093887,
+   "p_target": 0.999955,
+   "p_budget": 0.988325,
+   "p_loss": 0.0011
+  }
+ ]
+}

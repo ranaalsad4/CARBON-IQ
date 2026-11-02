@@ -1,0 +1,61 @@
+dataset,setting,nominal,empirical,ci_low,ci_high,n
+"base (held-out, seed 4404)","before (A4 v1: no change detection, t-interval, linear annual sum)",0.5,0.5271401243424199,0.5164302479444558,0.5378250811717167,8364
+"base (held-out, seed 4404)","before (A4 v1: no change detection, t-interval, linear annual sum)",0.8,0.8110951697752271,0.802564130118935,0.8193405675034482,8364
+"base (held-out, seed 4404)","before (A4 v1: no change detection, t-interval, linear annual sum)",0.9,0.8916786226685797,0.884837354734311,0.8981602584136245,8364
+"base (held-out, seed 4404)","before (A4 v1: no change detection, t-interval, linear annual sum)",0.95,0.9332855093256814,0.9277364281736605,0.9384367556017111,8364
+"base (held-out, seed 4404)","before (A4 v1: no change detection, t-interval, linear annual sum)",0.99,0.9723816355810617,0.9686467887559088,0.9756827501780022,8364
+"base (held-out, seed 4404)","after (refined: change detection, calibrated)",0.5,0.564581835609873,0.5539171747802761,0.5751870707421779,8346
+"base (held-out, seed 4404)","after (refined: change detection, calibrated)",0.8,0.8425593098490295,0.8345878733872446,0.8502155365361245,8346
+"base (held-out, seed 4404)","after (refined: change detection, calibrated)",0.9,0.9148094895758447,0.9086276570147813,0.9206096305524465,8346
+"base (held-out, seed 4404)","after (refined: change detection, calibrated)",0.95,0.9491972202252577,0.9442758262188016,0.9537052803928499,8346
+"base (held-out, seed 4404)","after (refined: change detection, calibrated)",0.99,0.9805895039539899,0.9774009138775406,0.9833358742311105,8346
+high_noise,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.5,0.5218594355285002,0.4988054636002527,0.5448206602970554,1807
+high_noise,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.8,0.8035417819590481,0.7845863367776694,0.8212093330368521,1807
+high_noise,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.9,0.8876591034864416,0.8722686701192119,0.9014047422874834,1807
+high_noise,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.95,0.9275041505257332,0.9146193749491264,0.9385750734222827,1807
+high_noise,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.99,0.9634753735473159,0.9537960673199459,0.9711882051862741,1807
+high_noise,"after (refined: change detection, calibrated)",0.5,0.5567928730512249,0.5337209933118727,0.5796223142325245,1796
+high_noise,"after (refined: change detection, calibrated)",0.8,0.8318485523385301,0.8138470279446844,0.8484334749617936,1796
+high_noise,"after (refined: change detection, calibrated)",0.9,0.9086859688195991,0.8944770522538673,0.921150278506795,1796
+high_noise,"after (refined: change detection, calibrated)",0.95,0.9454342984409799,0.9339472189727597,0.9550198990225126,1796
+high_noise,"after (refined: change detection, calibrated)",0.99,0.9749443207126949,0.9666390394648252,0.9812221500976339,1796
+flat_season,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.5,0.5337487019730011,0.5114240577776084,0.5559389838316098,1926
+flat_season,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.8,0.8146417445482866,0.796666676832433,0.8313641418627388,1926
+flat_season,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.9,0.8946002076843198,0.8800919195500887,0.9075374900346149,1926
+flat_season,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.95,0.9330218068535826,0.9209731465910972,0.9433464949794858,1926
+flat_season,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.99,0.9740394600207685,0.9659385407920149,0.9802531051959253,1926
+flat_season,"after (refined: change detection, calibrated)",0.5,0.5671875,0.5449125729751703,0.589194101919478,1920
+flat_season,"after (refined: change detection, calibrated)",0.8,0.8473958333333333,0.8306178440127461,0.8627864362564821,1920
+flat_season,"after (refined: change detection, calibrated)",0.9,0.9135416666666667,0.9001302348457458,0.9253015470639501,1920
+flat_season,"after (refined: change detection, calibrated)",0.95,0.946875,0.935920721039674,0.9560446050038007,1920
+flat_season,"after (refined: change detection, calibrated)",0.99,0.978125,0.970564443347072,0.9837760803218206,1920
+trend,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.5,0.5427394438722966,0.5205198855651175,0.5647902445091907,1942
+trend,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.8,0.8146240988671473,0.7967251491840595,0.8312807481099442,1942
+trend,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.9,0.8975283213182287,0.8832456741273339,0.9102413188529787,1942
+trend,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.95,0.9387229660144182,0.9271650395605537,0.9485485848166824,1942
+trend,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.99,0.9701338825952626,0.9615857412507492,0.9768256895666411,1942
+trend,"after (refined: change detection, calibrated)",0.5,0.5758207399687337,0.5535783857279573,0.5977601332639348,1919
+trend,"after (refined: change detection, calibrated)",0.8,0.8467952058363731,0.8299880499514881,0.8622166537536949,1919
+trend,"after (refined: change detection, calibrated)",0.9,0.9140177175612298,0.9006328560882277,0.9257482665169832,1919
+trend,"after (refined: change detection, calibrated)",0.95,0.948931735278791,0.9381544336683774,0.9579152165825846,1919
+trend,"after (refined: change detection, calibrated)",0.99,0.9749869723814487,0.9669936121408418,0.9810824020248596,1919
+break_intensity,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.5,0.48517520215633425,0.45981795195808534,0.5106090074709292,1484
+break_intensity,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.8,0.7796495956873315,0.757853906753949,0.8000011767441867,1484
+break_intensity,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.9,0.8807277628032345,0.863246374194094,0.8962430768334885,1484
+break_intensity,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.95,0.9272237196765498,0.9128748921134905,0.9393663679776375,1484
+break_intensity,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.99,0.9683288409703504,0.9581392450036508,0.976099991216119,1484
+break_intensity,"after (refined: change detection, calibrated)",0.5,0.5435861091424522,0.5175128086202082,0.5694227182967274,1411
+break_intensity,"after (refined: change detection, calibrated)",0.8,0.8228206945428774,0.8020290746364912,0.8418592588702422,1411
+break_intensity,"after (refined: change detection, calibrated)",0.9,0.9092841956059532,0.8931661201192077,0.9231796814178689,1411
+break_intensity,"after (refined: change detection, calibrated)",0.95,0.9475549255846917,0.9346603230657081,0.9580191118618483,1411
+break_intensity,"after (refined: change detection, calibrated)",0.99,0.9815733522324592,0.9731369516445197,0.9873946018523522,1411
+break_production,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.5,0.5003431708991077,0.474701891258609,0.5259826456549072,1457
+break_production,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.8,0.7975291695264242,0.7761251760557725,0.817368327962733,1457
+break_production,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.9,0.876458476321208,0.8585651474616341,0.8923718466655867,1457
+break_production,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.95,0.9169526424159231,0.9016626380518322,0.9300497118702948,1457
+break_production,"before (A4 v1: no change detection, t-interval, linear annual sum)",0.99,0.9636238846945779,0.9527265841307463,0.9720827860295777,1457
+break_production,"after (refined: change detection, calibrated)",0.5,0.5592783505154639,0.5306079127362731,0.5875587975436143,1164
+break_production,"after (refined: change detection, calibrated)",0.8,0.8393470790378007,0.8171402288302185,0.8593213734966723,1164
+break_production,"after (refined: change detection, calibrated)",0.9,0.897766323024055,0.879032962832025,0.913882788756204,1164
+break_production,"after (refined: change detection, calibrated)",0.95,0.9347079037800687,0.9190371847670155,0.9475186906188245,1164
+break_production,"after (refined: change detection, calibrated)",0.99,0.9716494845360825,0.9604532169415897,0.9797427822418611,1164

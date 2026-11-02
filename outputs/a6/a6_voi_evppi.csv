@@ -1,0 +1,7 @@
+parameter,evppi_nested,evppi_binned_model,posterior_choices_nested,share_grid_changing_choice,model_reported
+c_saving_frac,36058.213802113,35953.99621734116,A+B;A+B+C,0.375,35953.99621734116
+b_saving_frac,0.0,0.0,A+B+C,0.0,0.0
+tariff,0.0,4.656612873077393e-10,A+B+C,0.0,4.656612873077393e-10
+pv_yield,0.0,-4.656612873077393e-10,A+B+C,0.0,-4.656612873077393e-10
+ef_grid,0.0,4.656612873077393e-10,A+B+C,0.0,4.656612873077393e-10
+pv_capex_kw,0.0,9.313225746154785e-10,A+B+C,0.0,9.313225746154785e-10
