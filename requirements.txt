@@ -1,0 +1,10 @@
+# Minimum versions verified by the A1 audit (Python 3.11 and 3.12). Exact tested versions: requirements-lock.txt
+# v2.0: no new packages (Graphviz diagrams are drawn in the browser by Streamlit).
+numpy>=2.0
+scipy>=1.13
+pandas>=2.2.2
+openpyxl>=3.1
+matplotlib>=3.9
+plotly>=5.18
+streamlit>=1.49
+pytest>=8.0
